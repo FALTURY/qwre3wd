@@ -1,0 +1,16 @@
+program calculator;
+var a,b,c:integer;
+d:string;
+begin
+writeln('первое число');
+readln(a);
+writeln('введите знак операции');
+readln(d);
+writeln('второе число');
+readln(c);
+if d=('+') then b:=a+c;
+if d=('-') then b:=a-c;
+if d=('*') then b:=a*c;
+if d=('/') then b:=a div c;
+writeln('ответ: ',b);
+end.
